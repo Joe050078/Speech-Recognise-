@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Environment variables
+.env
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Models (large binary files)
+models/*.pt
+models/*.bin
+models/*.onnx
+
+# Audio samples (not committed for size)
+data/samples/*.wav
+data/samples/*.mp3
+data/samples/*.m4a
+data/samples/*.flac
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Logs
+*.log
+logs/
