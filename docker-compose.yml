@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  asr-api:
+    build: .
+    container_name: asr-api
+    ports:
+      - "8000:8000"
+    environment:
+      - WHISPER_MODEL=base
+      - ASR_ENGINE=whisper
+      - LANGUAGE=en
+      - SAMPLE_RATE=16000
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    restart: unless-stopped
